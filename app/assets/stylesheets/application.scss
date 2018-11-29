@@ -1,0 +1,180 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body, footer, p, ul, li {
+	font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+	background-color: transparent;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.navbar {
+	margin: auto;
+}
+
+hr {
+	border-width: 4px;
+}
+
+
+#jumbo1 {
+	height: 450px;
+	padding-right: 0;
+	padding-left: 0;
+	background-image: url("https://media2.mensxp.com/media/content/2017/Oct/life-lessons-from-arnold-schwarzenegger1400-1508319857_1100x513.jpg");
+	background-size: cover;
+}
+
+#jumbo2 {
+	height: 450px;
+	padding-right: 0;
+	margin-bottom: 0;
+	background-image: url("https://www.shape.com/sites/shape.com/files/u896/wide-top-of-push-up.jpg");
+	background-size: cover;
+}
+
+#jumbo3 {
+	height: 450px;
+	padding-right: 0;
+	margin-top: 0;
+	background-image: url("https://www.gymclothes.com/wp-content/themes/gymclothing/images/gym-clothing-banner.jpg");
+	background-size: cover;
+}
+
+.jumbotron h1 {
+	color: #f5f5f5;
+	text-shadow: 2px 2px 4px #000000;
+	padding-top: 90px;
+}
+
+#titleparagraph{
+	color: #f5f5f5;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#jumbo2_h1 {
+	padding-left: 40px;
+	color: #f5f5f5;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 40px;
+	text-align: left;
+}
+
+#jumbo3_h1 {
+	padding-right: 40px;
+	color: #f5f5f5;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 40px;
+	text-align: right;
+}
+
+#jumbo_button {
+	position: absolute;
+	right: 40px;
+	bottom: 50px;
+}
+
+#titleparagraph_2 {
+	padding-left: 40px;
+	color: #f5f5f5;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: left;
+	font-size: 20px;
+}
+
+#titleparagraph_3 {
+	padding-right: 40px;
+	color: #f5f5f5;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: right;
+	font-size: 20px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 24px;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 4px #000000;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.bottomrightig {
+	position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 12px;
+    color: #f5f5f5;
+    text-shadow: 2px 2px 4px #000000;
+    padding-right: 10px;
+}
+
+.btn-primary:hover {
+	background-color: #d5d5d5;
+	border: 1px solid #d5d5d5;
+}
+
+.btn-default:hover {
+	background-color: #d5d5d5;
+	border: 1px solid #d5d5d5;
+}
+
+.btn-secondary:hover {
+	background-color: #d5d5d5;
+	border: 1px solid #d5d5d5;
+}
+
+.social a {
+	font-size: 3.5em;
+	padding: 3rem;
+	background-color: transparent;
+}
+
+.fa-facebook {
+	color: #3b5998;
+}
+
+.fa-twitter {
+	color: #00aced;
+}
+
+.fa-instagram {
+	color: #517fa4;
+}
+
+.fa-youtube {
+	color: #bb0000;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+	color: #d5d5d5;
+}
+

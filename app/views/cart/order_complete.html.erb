@@ -1,0 +1,9 @@
+<div class="container">
+<h2>Thank you for your order!</h2>
+
+<p>
+  Order #<%= @order.id %> will be shipping to you shortly, an invoice has been sent to <%= @order.user.email %>!
+</p>
+
+<%= link_to "Back to Home Page", root_path, class: "btn btn-primary" %>
+</div>

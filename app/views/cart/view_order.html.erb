@@ -1,0 +1,37 @@
+<div class="container">
+
+	<h2>My Cart</h2>
+	<br>
+		<div>
+			<% if !@line_items.nil? == true %>
+				  <% @line_items.each do |line_item| %>
+					<div class="card">
+						<div class="well center-it">
+						    <h5><%= line_item.product.name %></h5>
+						    <h5>Qty: <%= line_item.quantity %></h5>
+						    <h5><%= number_to_currency line_item.product.price %></h5>
+
+						    <div class="text-right">
+						    	<h4>Subtotal: <%= number_to_currency line_item.line_item_total %></h4>
+							</div>
+						</div>
+					</div>
+				<% end %>
+			<% end %>
+
+			<% if @line_items.length == 0 %>
+			  <h3>Your cart is currently empty!</h3>
+			<% end %>
+		</div>
+
+		<div>
+		  <% if @line_items.length > 0 %>
+			  <%= link_to "Proceed to Checkout", checkout_path, class: "btn btn-success" %>
+			  <%= link_to "Clear Cart", empty_cart_path, class: "btn btn-danger" %>
+		  <% end %>
+
+		  <% if @line_items.length == 0 %>
+		  	<%= link_to "Back to Home Page", root_path, class: "btn btn-primary" %>
+		  <% end %>
+		</div>
+</div>
